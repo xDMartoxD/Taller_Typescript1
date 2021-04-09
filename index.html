@@ -26,28 +26,7 @@
 					<div class="card mt-5">
 						<h2 class="card-header">Datos Personales</h2>
 						<table class="table">
-							<tbody class="">
-								<tr class="">
-									<td>Código</td>
-									<td>201914078</td>
-								</tr>
-								<tr class="">
-									<td>Cédula</td>
-									<td>1001309026</td>
-								</tr>
-								<tr class="">
-									<td>Edad</td>
-									<td>20 Años</td>
-								</tr>
-								<tr class="">
-									<td>Dirección</td>
-									<td>Calle 78 #1a-22</td>
-								</tr>
-								<tr class="">
-									<td>Teléfono</td>
-									<td>3183916882</td>
-								</tr>
-							</tbody>
+							<tbody id="student"></tbody>
 						</table>
 					</div>
 				</div>
@@ -64,6 +43,7 @@
 							</thead>
 							<tbody id="courses"></tbody>
 						</table>
+						<h3 id="total-credits" class="align-self-center"></h3>
 					</div>
 					<form style="margin: 10px">
 						<div class="form-row">
@@ -86,6 +66,51 @@
 							</div>
 						</div>
 					</form>
+					<div class="card">
+						<form style="margin: 10px">
+							<div class="form-row">
+								<div class="col">
+									<div class="form-row">
+										<label
+											for="range-1"
+											class="form-label"
+											style="margin-right: 10px"
+											>Minimo</label
+										>
+										<input
+											type="range"
+											class="form-range"
+											min="0"
+											max="6"
+											id="range-1"
+											value="0"
+											style="margin-bottom: 14px"
+										/>
+
+										<p style="margin-left: 10px" id="min-value">0</p>
+									</div>
+									<div class="form-row" id="row-2">
+										<label
+											for="range-2"
+											class="form-label"
+											style="margin-right: 10px"
+											>Maximo</label
+										>
+										<input
+											type="range"
+											class="form-range"
+											min="0"
+											max="6"
+											value="0"
+											id="range-2"
+											style="margin-bottom: 14px"
+										/>
+										<p style="margin-left: 10px" id="max-value">0</p>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
